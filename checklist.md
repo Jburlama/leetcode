@@ -1,0 +1,3 @@
+# Easy
+
+- [x] Two Sum
