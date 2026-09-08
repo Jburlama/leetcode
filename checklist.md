@@ -8,3 +8,4 @@
 - [x] 125. Valid Palindrome
 - [x] 206. Reverse Linked List
 - [x] 226. Invert Binary Tree
+- [ ] 704. Binary Search
