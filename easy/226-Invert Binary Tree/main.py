@@ -15,10 +15,10 @@ class Solution:
 
         self.invertTree(root.left)
         self.invertTree(root.right)
-        temp = root.left
-        root.left = root.right
-        root.right = temp
+        root.left, root.right = root.right, root.left
+
         return root
+
 
 def create_tree(nums: List, i=0) -> Optional[TreeNode]:
     if i >= len(nums):
@@ -28,7 +28,6 @@ def create_tree(nums: List, i=0) -> Optional[TreeNode]:
     root.left = create_tree(nums, i * 2 + 1)
     root.right = create_tree(nums, i * 2 + 2)
     return root
-    
     
 
 def print_tree(root: Optional[TreeNode]) -> None:
